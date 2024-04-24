@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #19111E;
+  }
+  
+  .container {
+    max-width: 400px; /*caixa de login */
+    margin-left: auto; 
+    margin-right: auto; /* centraliza a caixa de login na pag */
+    width: 100%;
+    opacity: 0; 
+    transform: translateY(-20px); /* move para cima */
+    animation: appear 0.5s ease forwards; /* inicio da animação */
+    animation-delay: 0.5s; /* delay */
+  }
+  
+  .login-container {
+    background-color: #fff;
+    padding: 40px; 
+    border-radius: 20px; /* borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* centraliza dentro da caixa de login */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 10px; /* borda arredondada */
+  }
+  
+  button {
+    background-color: #19111E;
+    color: #fff;
+    border: none;
+    padding: 13px 35px;
+    border-radius: 5px; /* borda arredondada */
+    cursor: pointer;
+    transition: transform 0.3s ease;  /* transicaoo */
+    transition: transform background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3d2949; /* cor do botão dps q passa no mouse */
+    transform: translateX(5px); /* transicao */
+  }
+  
+  #error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  /* animação */
+@keyframes appear {
+    to {
+      opacity: 1; /* Opacidade total */
+      transform: translateY(0); /* Volta à posição original */
+    }
+  }
+  
